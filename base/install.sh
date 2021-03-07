@@ -124,7 +124,7 @@ REPLACE="
 print_modname() {
   ui_print " "
   ui_print "    ********************************************"
-  ui_print "    *         MagiskFrida by AeonLucid         *"
+  ui_print "    *         Frida Installer by MissCoconut   *"
   ui_print "    ********************************************"
   ui_print " "
 }
@@ -147,7 +147,8 @@ set_permissions() {
   set_perm_recursive $MODPATH 0 0 0755 0644
 
   # Custom permissions
-  set_perm $MODPATH/system/xbin/frida-server 0 2000 0755 u:object_r:system_file:s0
+  set_perm $MODPATH/system/bin/frida-server-32 0 2000 0755 u:object_r:system_file:s0
+  set_perm $MODPATH/system/bin/frida-server-64 0 2000 0755 u:object_r:system_file:s0
 }
 
 # You can add more functions to assist your custom script code

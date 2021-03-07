@@ -1,0 +1,8 @@
+id=magiskfrida
+name=InstallFrida
+version=v14.2.13
+versionCode=14213
+author=MissCoconut
+description=install frida-server to /system/bin directory
+support=None
+minMagisk=1530
